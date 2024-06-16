@@ -39,7 +39,7 @@
         "STICKER_DATA": {
             "description": "Name of stickers created using bot. Can also split using ;",
             "required": true,
-            "value":"Xhriss_Md pack;Author Xhriss"
+            "value":"bongo-md pack;Author Xhriss"
         },
         "CHATBOT": {
             "description": "AI chatbot",
@@ -49,12 +49,12 @@
         "BOT_NAME": {
             "description": "Name of AI chatbot",
             "required": true,
-            "value":"Xhriss_Md"
+            "value":"bongo-md"
         },
         "AUDIO_DATA": {
             "description": "Name of audio (take) name;name;image(url)",
             "required": true,
-            "value":"Xhriss_Md,mwasota,https://telegra.ph/file/2912dd1d0665285ffc931.jpg"
+            "value":"bongo-md,mwasota,https://telegra.ph/file/2912dd1d0665285ffc931.jpg"
         },
         "MODE": {
             "description": "Private or public",
@@ -79,7 +79,7 @@
         "ALLOWED": {
             "description": "Country codes allowed by antifake",
             "required": false,
-            "value":"255,48"
+            "value":"255"
         },
         "WARN": {
             "description": "Warn limit",
@@ -99,7 +99,7 @@
         "ALIVE": {
             "description": "Alive message, customize your alive msg by looking wiki",
             "required": false,
-            "value":"_Bot is alive since {uptime}_"
+            "value":"Bot is alive since {uptime}_"
         },
        "SESSION": {
             "description": "Your session code, obtained by scanning QR",
