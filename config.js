@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { Sequelize } = require('sequelize');
-const isVPS = !(__dirname.startsWith("/rgnk") || __dirname.startsWith("/skl"));
-const isHeroku = __dirname.startsWith("/skl");
-const isKoyeb = __dirname.startsWith("/rgnk");
+const isVPS = !(__dirname.startsWith("/bng") || __dirname.startsWith("/skl"));
+const isHeroku = __dirname.startsWith("/bng");
+const isKoyeb = __dirname.startsWith("/bng");
 const isRailway = __dirname.startsWith("/railway");
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 function convertToBool(text, fault = 'true',fault2='on') {
@@ -34,7 +34,7 @@ module.exports = {
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(edit AUTOMUTE_MSG)_',
     ANTIWORD_WARN: process.env.ANTIWORD_WARN || '',
-    ANTI_SPAM: process.env.ANTI_SPAM || '919074309534-1632403322@g.us',
+    ANTI_SPAM: process.env.ANTI_SPAM || '255616064658-255716312895@g.us',
     MULTI_HANDLERS: convertToBool(process.env.MULTI_HANDLERS) || false,
     DISABLE_START_MESSAGE: convertToBool(process.env.DISABLE_START_MESSAGE) || false,
     NOLOG: process.env.NOLOG || false,
@@ -51,16 +51,16 @@ module.exports = {
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
     SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
-    RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
-    BOT_INFO: process.env.BOT_INFO || 'Raganork;Skl11;0;https://i.imgur.com/P7ziVhr.jpeg;https://chat.whatsapp.com/Dt3C4wrQmt0GG6io1IBIHb',
+    RG: process.env.RG || '255616064658-255716312895@g.us',
+    BOT_INFO: process.env.BOT_INFO || 'bongo;Xhriss24;0;https://i.imgur.com/P7ziVhr.jpeg;https://chat.whatsapp.com/Dt3C4wrQmt0GG6io1IBIHb',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '255,2',
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "Xhriss_Md",
-    BOT_NAME: process.env.BOT_NAME || 'Xhriss_Md',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝑺𝜣𝑼𝑹𝛢𝑽𝑲𝑳¹¹ꫂ;Raganork MD bot;https://i.imgur.com/P7ziVhr.jpeg' : process.env.AUDIO_DATA,
+    STICKER_DATA: process.env.STICKER_DATA || "bongo-md",
+    BOT_NAME: process.env.BOT_NAME || 'bongo-md',
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'Xhriss24٭;Bongo Md bot;https://i.imgur.com/P7ziVhr.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
     WARN: process.env.WARN || '2',
