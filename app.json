@@ -1,11 +1,9 @@
 {
     "name": "Xhriss_Md",
-    "description": "WhatsApp public/user bot",
+    "description": "WhatsApp best bot user",
     "logo": "https://telegra.ph/file/2912dd1d0665285ffc931.jpg",
     "keywords": ["WhatsApp"],
-    "repository": "https://github.com/mwasota/raganork-md",
-    "website":   "https://raganork.ml",
-    "success_url": "https://raganork.ml",
+    "repository": "https://github.com/mwasota/bongo-md",
     "stack": "container",
     "env": {
         "HANDLERS": {
