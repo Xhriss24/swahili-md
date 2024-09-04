@@ -17,16 +17,16 @@
   "SUDO": {
    "description": "SUDO NUMBERS",
    "required": true,
-   "value": "2348039607375,2349027862116"
+   "value": "255616064658"
   }
  },
  "AUTHOR": {
   "description": "STICKER AUTHOR",
-  "value": "ASTRO"
+  "value": "ZAX"
  },
  "PACKNAME": {
   "description": "STICKER PACKNAME",
-  "value": "FXOP_BOT"
+  "value": "ZAX_BOT"
  },
  "AUTO_READ": {
   "description": "AUTO READ MSGS",
