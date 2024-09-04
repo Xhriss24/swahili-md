@@ -1,0 +1,15 @@
+services:
+ - type: worker
+   name: swahili-md-demo
+   env: docker
+   plan: starter
+   dockerfilePath: ./Dockerfile
+   envVars:
+    - key: SESSION_ID
+      value: Session~
+    - key: BOT_INFO
+      value: swahili;bᴘ-gᴅ
+    - key: SUDO
+      value: 255616064658
+    - key: ANTILINK
+      value: "true"
