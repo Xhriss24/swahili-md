@@ -1,6 +1,6 @@
 services:
  - type: worker
-   name: fxop-md-demo
+   name: swahili-md-demo
    env: docker
    plan: starter
    dockerfilePath: ./Dockerfile
