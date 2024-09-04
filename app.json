@@ -1,118 +1,53 @@
 {
-    "name": "Xhriss_Md",
-    "description": "WhatsApp best bot user",
-    "logo": "https://telegra.ph/file/2912dd1d0665285ffc931.jpg",
-    "keywords": ["WhatsApp"],
-    "repository": "https://github.com/mwasota/bongo-md",
-    "stack": "container",
-    "env": {
-        "HANDLERS": {
-            "description": "Prefix of commands. Can be also false",
-            "required": true,
-            "value":"."
-        },
-        "MULTI_HANDLERS": {
-            "description": "Use prefix as given handlers and also without handlers",
-            "required": true,
-            "value":"false"
-        },
-        "READ_MESSAGES": {
-            "description": "Bot will read all messages. Can be also false",
-            "required": true,
-            "value":"false"
-        },
-        "READ_COMMAND": {
-            "description": "Bot will read all commands (blue tick). Can be also false",
-            "required": true,
-            "value":"true"
-        },
-       "HEROKU_API_KEY": {
-            "description": "For updating bot and setting vars remotely",
-            "required": true,
-            "value":""
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Exact name which you gave at the top",
-            "required": true,
-            "value":""
-        },
-        "STICKER_DATA": {
-            "description": "Name of stickers created using bot. Can also split using ;",
-            "required": true,
-            "value":"bongo-md pack;Author Xhriss"
-        },
-        "CHATBOT": {
-            "description": "AI chatbot",
-            "required": true,
-            "value":"off"
-        },
-        "BOT_NAME": {
-            "description": "Name of AI chatbot",
-            "required": true,
-            "value":"bongo-md"
-        },
-        "AUDIO_DATA": {
-            "description": "Name of audio (take) name;name;image(url)",
-            "required": true,
-            "value":"bongo-md,mwasota,https://telegra.ph/file/2912dd1d0665285ffc931.jpg"
-        },
-        "MODE": {
-            "description": "Private or public",
-            "required": true,
-            "value":"private"
-        },
-        "SUDO": {
-            "description": "These numbers can control your bot. seperate with commas",
-            "required": false,
-            "value":""
-        },
-        "BLOCK_CHAT": {
-            "description": "Block bot in specific groups, enter jids here sepereated with commas",
-            "required": false,
-            "value":""
-        },
-        "REJECT_CALLS": {
-            "description": "Auto reject calls, true/false",
-            "required": false,
-            "value":"false"
-        },
-        "ALLOWED": {
-            "description": "Country codes allowed by antifake",
-            "required": false,
-            "value":"255"
-        },
-        "WARN": {
-            "description": "Warn limit",
-            "required": false,
-            "value":"2"
-        },
-        "LANGUAGE": {
-            "description": "Available languages: english,manglish,turkish",
-            "required": false,
-            "value":"english"
-        },
-        "AUTO_READ_STATUS": {
-            "description": "View status updates automatically",
-            "required": false,
-            "value":"true"
-        },
-        "ALIVE": {
-            "description": "Alive message, customize your alive msg by looking wiki",
-            "required": false,
-            "value":"Bot is alive since {uptime}_"
-        },
-       "SESSION": {
-            "description": "Your session code, obtained by scanning QR",
-            "required": true         
-        }
-    },
-    "addons": [{
-      "plan": "heroku-postgresql"
-    }],
-    "buildpacks": [{
-      "url": "heroku-community/apt"
-      },
-      {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-      }]
+ "name": "swahili-md",
+ "logo": "",
+ "success_url": "/",
+ "stack": "container",
+ "env": {
+  "SESSION_ID": {
+   "description": "SESSION ID FOR BOT",
+   "required": true,
+   "value": "Session~"
+  },
+  "BOT_INFO": {
+   "description": "BOT INFO",
+   "required": true,
+   "value": "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ;https://raw.githubusercontent.com/FXastro/fxop-md/master/media/images/thumb.jpg"
+  },
+  "SUDO": {
+   "description": "SUDO NUMBERS",
+   "required": true,
+   "value": "2348039607375,2349027862116"
   }
+ },
+ "AUTHOR": {
+  "description": "STICKER AUTHOR",
+  "value": "ASTRO"
+ },
+ "PACKNAME": {
+  "description": "STICKER PACKNAME",
+  "value": "FXOP_BOT"
+ },
+ "AUTO_READ": {
+  "description": "AUTO READ MSGS",
+  "value": "false"
+ },
+ "RMBG_KEY": {
+  "description": "REMOVE BG KEY",
+  "value": ""
+ },
+ "HEROKU_APP_NAME": {
+  "description": "SAME AS ABOVE",
+  "value": ""
+ },
+ "HEROKU_API_KEY": {
+  "description": "USED FOR HEROKU VARS",
+  "value": ""
+ },
+ "formation": {
+  "worker": {
+   "quantity": 1,
+   "size": "basic"
+  }
+ }
+}
