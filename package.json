@@ -6,7 +6,7 @@
  "directories": {
   "lib": "lib"
  },
- "author": "FXastro",
+ "author": "Xhriss24",
  "scripts": {
   "start": "pm2 start index.js --deep-monitoring --attach --name fx-md",
   "restart": "pm2 restart swahili-md",
