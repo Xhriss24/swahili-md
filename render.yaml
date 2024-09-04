@@ -1,6 +1,10 @@
 services:
  - type: worker
+         Xhriss24-patch-1
    name: swahili-md-demo
+
+   name: fxop-md-demo
+         main
    env: docker
    plan: starter
    dockerfilePath: ./Dockerfile
@@ -8,8 +12,14 @@ services:
     - key: SESSION_ID
       value: Session~
     - key: BOT_INFO
+      Xhriss24-patch-1
       value: swahili;bᴘ-gᴅ
     - key: SUDO
       value: 255616064658
+
+      value: swahili;tz
+    - key: SUDO
+      value: 2556164658
+      main
     - key: ANTILINK
       value: "true"
